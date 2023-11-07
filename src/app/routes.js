@@ -18,9 +18,9 @@ const AnimatedSwitch = withRouter(({ location }) => (
       unmountOnExit
     >
       <Switch location={location}>
-        <Route exact path="/lab/" component={Home} />
-        <Route path="/lab/projects" component={Projects} />
-        <Route path="/lab/*" component={Home} />
+        <Route exact path="/" component={Home} />
+        <Route path="/projects" component={Projects} />
+        <Route path="*" component={Home} />
       </Switch>
     </CSSTransition>
   </TransitionGroup>
